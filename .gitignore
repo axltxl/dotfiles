@@ -23,6 +23,8 @@ photothing
 *.swp
 .sync-conflict*
 .*_history
+.viminfo
+.histfile
 
 # Things I simply don't want to track
 .docker
@@ -30,6 +32,9 @@ photothing
 .rd
 .redhat
 .terraform*
+.CFUserTextEncoding
+.localized
+.local
 
 # shell
 .*shrc
