@@ -1,0 +1,47 @@
+# My Main folders (Documents, Projects, etc)
+Applications
+Downloads
+Music
+Public
+Desktop
+Library
+Pictures
+X-Plane*
+Documents
+Movies
+Projects
+photothing
+# [A-Za-z]*
+!README.md
+
+# Cache/Temp files
+.Trash
+.lesshst
+.cache
+.dlv
+.DS_Store
+*.swp
+.sync-conflict*
+.*_history
+
+# Things I simply don't want to track
+.docker
+.cups
+.rd
+.redhat
+.terraform*
+
+# shell
+.*shrc
+!.zshrc
+.oh-my-zsh
+.zsh_sessions
+.zcomp*
+
+# Former dotfiles configuration
+.dot*
+
+# Sensitive data
+.aws
+.sensitive
+
