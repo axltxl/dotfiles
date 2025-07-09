@@ -1,0 +1,8 @@
+# vim: ft=zsh
+#####################
+# Settings for golang
+#####################
+export GOPATH=~/Projects/golang
+
+# so golang-made programs can be seen
+export PATH=$GOPATH/bin:$PATH

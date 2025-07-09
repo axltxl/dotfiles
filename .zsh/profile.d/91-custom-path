@@ -1,0 +1,7 @@
+# vim: ft=zsh
+################################
+# Settings for custom PATH
+################################
+if [[ ! -z "$DOT_CUSTOM_PATH" ]]; then
+    PATH=$DOT_CUSTOM_PATH:$PATH
+fi

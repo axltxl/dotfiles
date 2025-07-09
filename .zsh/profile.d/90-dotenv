@@ -1,0 +1,9 @@
+# vim: ft=zsh
+############################################
+# Fill the environment with
+# custom variables via dot-env
+############################################
+if [[ ! -f "$DOT_ENV_OUT" ]]; then
+    dot-env > $DOT_ENV_OUT 2> /dev/null
+fi
+. $DOT_ENV_OUT
