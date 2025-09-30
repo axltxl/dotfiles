@@ -57,3 +57,7 @@ photothing
 
 # tmux
 .tmux/plugins
+
+# vim
+.vim
+
