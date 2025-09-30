@@ -111,9 +111,3 @@ fi
 # Uncomment if you want to profile startup time
 # zprof
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/alri/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
-# Created by `pipx` on 2024-10-24 11:22:22
-export PATH="$PATH:/Users/alri/.local/bin"
