@@ -2,19 +2,9 @@
 #################
 # The very basics
 #################
-export EDITOR=vi
-export VISUAL=vi
+export EDITOR=nvim
+export VISUAL=nvim
 export PAGER=less
-
-#############
-# Web browser
-#############
-if [ -n "$DISPLAY" ]; then
-    BROWSER=chromium
-else
-    BROWSER=links
-fi
-export BROWSER
 
 ###################
 # Terminal settings

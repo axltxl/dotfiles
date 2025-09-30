@@ -1,9 +1,0 @@
-# vim: ft=zsh
-##########################################
-# pyenv needs to be added to PATH in order
-# for all little pythons to be present
-##########################################
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-

@@ -1,5 +1,0 @@
-# vim: ft=zsh
-#################################
-# Standard PATH at the user level
-#################################
-PATH=$DOT_PATH/bin:$PATH
