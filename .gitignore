@@ -46,6 +46,8 @@ photothing
 .zcomp*
 .bash*
 .profile
+# oh-my-zsh does this ... I guess for a reason
+.shell.pre-oh-my-zsh 
 
 # Former dotfiles configuration
 .dot*
