@@ -25,6 +25,7 @@ photothing
 .*_history
 .viminfo
 .histfile
+.motd_shown
 
 # Things I simply don't want to track
 .docker
@@ -35,6 +36,7 @@ photothing
 .CFUserTextEncoding
 .localized
 .local
+.sudo_as_admin_successful 
 
 # shell
 .*shrc
@@ -42,6 +44,8 @@ photothing
 .oh-my-zsh
 .zsh_sessions
 .zcomp*
+.bash*
+.profile
 
 # Former dotfiles configuration
 .dot*
@@ -49,4 +53,5 @@ photothing
 # Sensitive data
 .aws
 .sensitive
+.ssh
 
