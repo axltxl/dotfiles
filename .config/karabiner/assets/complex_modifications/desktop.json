@@ -1,0 +1,35 @@
+{
+  "title": "Desktop",
+  "rules": [
+    {
+      "description": "Desktop: lock screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "q"
+              },
+              {
+                "key_code": "l"
+              }
+            ],
+            "modifiers": {
+              "mandatory": [
+                "right_option"
+              ]
+            }
+          },
+          "to": {
+            "modifiers": [
+              "control",
+              "command"
+            ],
+            "key_code": "q"
+          }
+        }
+      ]
+    }
+  ]
+}

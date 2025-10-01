@@ -1,0 +1,98 @@
+{
+  "title": "FlowApp keystroke translations",
+  "rules": [
+    {
+      "description": "Flow: show/hide window",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "f"
+              },
+              {
+                "key_code": "s"
+              }
+            ],
+            "modifiers": {
+              "mandatory": [
+                "option"
+              ]
+            }
+          },
+          "to": {
+            "modifiers": [
+              "control",
+              "command",
+              "option"
+            ],
+            "key_code": "h"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Flow: start/stop Pomodoro timer",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "f"
+              },
+              {
+                "key_code": "spacebar"
+              }
+            ],
+            "modifiers": {
+              "mandatory": [
+                "option"
+              ]
+            }
+          },
+          "to": {
+            "modifiers": [
+              "control",
+              "command",
+              "option"
+            ],
+            "key_code": "f"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Flow: reset Pomodoro counter",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "f"
+              },
+              {
+                "key_code": "d"
+              }
+            ],
+            "modifiers": {
+              "mandatory": [
+                "option"
+              ]
+            }
+          },
+          "to": {
+            "modifiers": [
+              "control",
+              "command",
+              "option"
+            ],
+            "key_code": "r"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "title": "Media keys",
+  "rules": [
+    {
+      "description": "MediaKeys: Play/Pause",
+      "manipulators" : [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ]
+            }
+          },
+          "to" : {
+            "key_code" : "play_or_pause"
+          }
+        }
+      ]
+    },
+    {
+      "description": "MediaKeys: Play next track",
+      "manipulators" : [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ]
+            }
+          },
+          "to" : {
+            "consumer_key_code" : "scan_next_track"
+          }
+        }
+      ]
+    },
+    {
+      "description": "MediaKeys: Play previous track",
+      "manipulators" : [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "command",
+                "option"
+              ]
+            }
+          },
+          "to" : {
+            "consumer_key_code" : "scan_previous_track"
+          }
+        }
+      ]
+    }
+  ]
+}

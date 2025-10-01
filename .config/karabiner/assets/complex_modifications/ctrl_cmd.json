@@ -1,0 +1,28 @@
+{
+  "title": "CTRL/CMD Key Swap",
+  "rules": [
+    {
+      "description": "CTRL/CMD: swap left control/command keys for VSCode and iTerm2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command"
+          },
+          "to": {
+            "key_code": "left_control"
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com\\.microsoft\\.VSCode",
+                "com\\.googlecode\\.iterm2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
