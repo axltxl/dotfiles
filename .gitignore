@@ -14,6 +14,12 @@ photothing
 # [A-Za-z]*
 !README.md
 
+# Google Drive
+Google Drive
+
+# VirtualBox
+VirtualBox*
+
 # Cache/Temp files
 .Trash
 .lesshst
@@ -26,6 +32,12 @@ photothing
 .viminfo
 .histfile
 .motd_shown
+.pyenv
+.vagrant*
+.ruff_cache
+.tflint*
+.mypy_cache
+
 
 # Things I simply don't want to track
 .docker
@@ -35,8 +47,29 @@ photothing
 .terraform*
 .CFUserTextEncoding
 .localized
-.local
-.sudo_as_admin_successful 
+.local/*
+!./local/bin/dot-env
+.sudo_as_admin_successful
+.azure
+.cargo
+.assume
+.granted
+.gk
+.cdk
+.amazon*
+.adobe
+.duckdb
+.mongodb
+# nodejs
+.nvm
+.npm*
+
+# k8s
+.minikube
+.kube*
+
+# vscode stuff
+.vs*
 
 # shell
 .*shrc
@@ -47,7 +80,7 @@ photothing
 .bash*
 .profile
 # oh-my-zsh does this ... I guess for a reason
-.shell.pre-oh-my-zsh 
+.shell.pre-oh-my-zsh
 
 # Former dotfiles configuration
 .dot*
@@ -62,4 +95,8 @@ photothing
 
 # vim
 .vim
+
+# .config
+.config/*
+!.config/karabiner
 
