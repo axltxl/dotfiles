@@ -63,6 +63,7 @@ VirtualBox*
 # nodejs
 .nvm
 .npm*
+.pagerduty*
 
 # k8s
 .minikube
@@ -79,6 +80,7 @@ VirtualBox*
 .zcomp*
 .bash*
 .profile
+.*profile
 # oh-my-zsh does this ... I guess for a reason
 .shell.pre-oh-my-zsh
 
