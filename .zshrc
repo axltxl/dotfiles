@@ -104,11 +104,6 @@ if [[ "$TERM_PROGRAM" != "vscode" ]]; then
     fi
 fi
 
-######################################
-# Start fzf on every shell login
-######################################
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # Uncomment if you want to profile startup time
 # zprof
 
