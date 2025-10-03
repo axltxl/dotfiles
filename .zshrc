@@ -62,6 +62,7 @@ plugins=( \
     # rvm \
     # vagrant \
     # golang \
+    fzf \
     )
 
 # User configuration

@@ -1,0 +1,20 @@
+#####################
+# Settings for fzf
+#####################
+if which fzf > /dev/null 2>&1; then
+
+  # Settings for fzf
+  # I put these here so they can be caught by the fzf plugin
+  # in .zshrc
+  export FZF_DEFAULT_OPTS="--height 60% --tmux bottom,70% --layout reverse --border top"
+  export FZF_CTRL_R_OPTS="
+  --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
+  --color header:italic
+  --header 'Press CTRL-Y to copy command into clipboard'"
+
+    # Set up fzf key bindings and fuzzy completion
+    # fixme; at the present moment in time, this does not quite work.
+    # I mean, it works, but it CTRL-R is not working, so I'm instead
+    # using the fzf plugin for oh-my-zsh
+    # source <(fzf --zsh)
+fi
