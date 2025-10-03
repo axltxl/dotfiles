@@ -2,7 +2,14 @@
 #####################
 # Settings for golang
 #####################
-export GOPATH=~/Projects/golang
+if which go > /dev/null 2>&1; then
+    # Set the GOROOT to the location where go is installed
+    export GOROOT=$(go env GOROOT)
 
-# so golang-made programs can be seen
-export PATH=$GOPATH/bin:$PATH
+    # Add the go binary to the path
+    export PATH=$GOROOT/bin:$PATH
+
+    # Set the GOPATH to the default location
+    export GOPATH=~/Projects/golang
+fi
+
