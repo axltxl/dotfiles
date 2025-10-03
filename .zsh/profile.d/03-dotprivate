@@ -1,0 +1,28 @@
+#################
+# Set up dotfiles located in ~/.dotprivate
+#################
+
+# Define the directory containing private dotfiles
+# This directory contains 'package' directories managed by GNU Stow
+# whose contents are symlinked into the user's home directory
+# Example structure:
+# ~/.dotsync/
+# ├── package1/
+# │   ├── .config/...
+# │   └── .bashrc
+# └── package2/
+#     ├── .vimrc
+#     └── .vim/
+DOTPRIVATE_DIR="$HOME/.dotsync"
+
+# Check if the DOTPRIVATE_DIR directory exists and process dotprivate packages
+# Iterates through all subdirectories in DOTPRIVATE_DIR and simulates
+# restowing each package using GNU Stow, targeting the user's HOME directory
+# The --simulate flag performs a dry run without actually creating symlinks
+# The -R flag restows (removes and re-adds) the package
+if [ -d "$DOTPRIVATE_DIR" ]; then
+    for dotprivate_pkg in "$DOTPRIVATE_DIR"/*/ ; do
+        [ -d "$dotprivate_pkg" ] || continue
+        stow -R -d "$DOTPRIVATE_DIR" -t "$HOME" `basename "$dotprivate_pkg"`
+    done
+fi
