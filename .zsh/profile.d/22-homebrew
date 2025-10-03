@@ -1,6 +1,0 @@
-# Homebrew
-HOMEBREW_PREFIX="/opt/homebrew"
-
-if [[ "$(uname)" == "Darwin" ]]; then
-    eval `${HOMEBREW_PREFIX}/bin/brew shellenv`
-fi
