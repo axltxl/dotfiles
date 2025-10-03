@@ -1,0 +1,15 @@
+[user]
+	name  = Alejandro Ricoveri
+	email = alejandroricoveri@gmail.com
+[core]
+	editor = vim
+[push]
+	default = simple
+[branch "master"]
+	pushRemote = no_push
+[branch "main"]
+	pushRemote = no_push
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[url "ssh://git@github.com/"]
+    insteadOf = https://github.com/
