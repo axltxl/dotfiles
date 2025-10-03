@@ -84,34 +84,6 @@
           ]
         }
       ]
-    },
-    {
-      "description": "AppLaunch: Spotify",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "w"
-              },
-              {
-                "key_code": "p"
-              }
-            ],
-            "modifiers": {
-              "mandatory": [
-                "option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open '/Applications/Spotify.app'"
-            }
-          ]
-        }
-      ]
     }
   ]
 }
