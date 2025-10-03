@@ -1,9 +1,16 @@
-# vim: ft=zsh
 ############################################
 # Fill the environment with
 # custom variables via dot-env
 ############################################
+
+# These are used by dot-env
+export DOT_ENV_OUT=${HOME}/.dotenv.out
+export DOT_ENV_CFG=${HOME}/.dotenv
+
 if [[ ! -f "$DOT_ENV_OUT" ]]; then
+    # see: .local/bin/dot-env
     dot-env > $DOT_ENV_OUT 2> /dev/null
 fi
+
+# source environment variables defined in the final output file
 . $DOT_ENV_OUT
