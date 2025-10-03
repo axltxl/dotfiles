@@ -2,11 +2,6 @@
 
 <description pending>
 
-## TODO
-
-- dot-env: rewrite in python3
-- nvim
-
 ## Install this repo
 
 ```bash
