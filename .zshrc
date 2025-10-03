@@ -12,7 +12,7 @@ ZSH_THEME="robbyrussell"
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 export UPDATE_ZSH_DAYS=14
@@ -43,7 +43,11 @@ COMPLETION_WAITING_DOTS="true"
 ZSH_CUSTOM=$ZSH_HOME/custom
 
 # Mac fixy fixy Big Sur
-ZSH_DISABLE_COMPFIX=true
+DISABLE_COMPFIX=true
+
+# I'm disabling magic function since they're eating
+# too much time during shell startup
+DISABLE_MAGIC_FUNCTIONS=true
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -51,17 +55,9 @@ ZSH_DISABLE_COMPFIX=true
 # Add wisely, as too many plugins slow down shell startup.
 plugins=( \
     vi-mode \
-    # git \
     dotools \
-    # python \
-    # pip \
     hist \
-    # pydev \
-    # tmux \
     themes \
-    # rvm \
-    # vagrant \
-    # golang \
     fzf \
     )
 
