@@ -20,3 +20,6 @@
 
 # karabiner-elements
 !.config/karabiner
+
+# vim/nvim
+*.swp
