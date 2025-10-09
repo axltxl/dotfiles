@@ -5,6 +5,19 @@
                 "parameters": { "basic.simultaneous_threshold_milliseconds": 250 },
                 "rules": [
                     {
+                        "description": "ViEsc: Map ctrl + [ to escape",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": { "mandatory": ["left_control"] }
+                                },
+                                "to": [{ "key_code": "escape" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "CTRL/CMD: swap left control/command keys for VSCode and iTerm2",
                         "manipulators": [
                             {

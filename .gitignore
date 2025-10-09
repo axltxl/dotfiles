@@ -19,7 +19,11 @@
 !.local/bin/dot-env
 
 # karabiner-elements
-!.config/karabiner
+!.config/karabiner/
+!.config/karabiner/**/
+!.config/karabiner/**/.*
+!.config/karabiner/**/*
+
 
 # vim/nvim
 *.swp
