@@ -1,0 +1,12 @@
+########################################
+# nvim stuff
+########################################
+
+# aliases
+alias vim=nvim
+
+[ ! -d ~/.config/nvim-dev ] && git clone git@github.com:axltxl/dotneovim.git ~/.config/nvim-dev
+
+# 'development' version of my nvim config
+alias nvim-dev="NVIM_APPNAME=nvim-dev nvim"
+alias ndev=nvim-dev
