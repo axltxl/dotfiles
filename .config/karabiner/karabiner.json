@@ -2,7 +2,9 @@
     "profiles": [
         {
             "complex_modifications": {
-                "parameters": { "basic.simultaneous_threshold_milliseconds": 250 },
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 250
+                },
                 "rules": [
                     {
                         "description": "ViEsc: Map ctrl + [ to escape",
@@ -10,15 +12,23 @@
                             {
                                 "from": {
                                     "key_code": "open_bracket",
-                                    "modifiers": { "mandatory": ["left_control"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "key_code": "escape" }],
+                                "to": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "CTRL/CMD: swap left control/command keys for VSCode and iTerm2",
+                        "description": "CTRL/CMD: swap left control/command keys for relevant apps",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -31,8 +41,12 @@
                                         "type": "frontmost_application_if"
                                     }
                                 ],
-                                "from": { "key_code": "left_command" },
-                                "to": { "key_code": "left_control" },
+                                "from": {
+                                    "key_code": "left_command"
+                                },
+                                "to": {
+                                    "key_code": "left_control"
+                                },
                                 "type": "basic"
                             }
                         ]
@@ -51,9 +65,17 @@
                                 ],
                                 "from": {
                                     "key_code": "h",
-                                    "modifiers": { "mandatory": ["command"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "key_code": "left_arrow" }],
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -67,9 +89,17 @@
                                 ],
                                 "from": {
                                     "key_code": "j",
-                                    "modifiers": { "mandatory": ["command"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "key_code": "down_arrow" }],
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -83,9 +113,17 @@
                                 ],
                                 "from": {
                                     "key_code": "k",
-                                    "modifiers": { "mandatory": ["command"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "key_code": "up_arrow" }],
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -99,9 +137,17 @@
                                 ],
                                 "from": {
                                     "key_code": "l",
-                                    "modifiers": { "mandatory": ["command"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "key_code": "right_arrow" }],
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -120,9 +166,17 @@
                                 ],
                                 "from": {
                                     "key_code": "open_bracket",
-                                    "modifiers": { "mandatory": ["left_command"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ]
+                                    }
                                 },
-                                "to": [{ "key_code": "escape" }],
+                                "to": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -133,9 +187,16 @@
                             {
                                 "from": {
                                     "key_code": "spacebar",
-                                    "modifiers": { "mandatory": ["command", "option"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "option"
+                                        ]
+                                    }
                                 },
-                                "to": { "key_code": "play_or_pause" },
+                                "to": {
+                                    "key_code": "play_or_pause"
+                                },
                                 "type": "basic"
                             }
                         ]
@@ -146,9 +207,16 @@
                             {
                                 "from": {
                                     "key_code": "n",
-                                    "modifiers": { "mandatory": ["command", "option"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "option"
+                                        ]
+                                    }
                                 },
-                                "to": { "consumer_key_code": "scan_next_track" },
+                                "to": {
+                                    "consumer_key_code": "scan_next_track"
+                                },
                                 "type": "basic"
                             }
                         ]
@@ -159,25 +227,44 @@
                             {
                                 "from": {
                                     "key_code": "p",
-                                    "modifiers": { "mandatory": ["command", "option"] }
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "option"
+                                        ]
+                                    }
                                 },
-                                "to": { "consumer_key_code": "scan_previous_track" },
+                                "to": {
+                                    "consumer_key_code": "scan_previous_track"
+                                },
                                 "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "AppLaunch: Launch VSCode",
+                        "description": "AppLaunch: Launch editor",
                         "manipulators": [
                             {
                                 "from": {
-                                    "modifiers": { "mandatory": ["option"] },
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    },
                                     "simultaneous": [
-                                        { "key_code": "w" },
-                                        { "key_code": "e" }
+                                        {
+                                            "key_code": "w"
+                                        },
+                                        {
+                                            "key_code": "e"
+                                        }
                                     ]
                                 },
-                                "to": [{ "shell_command": "open '/Applications/Visual Studio Code.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open '/Applications/Neovide.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -187,13 +274,25 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "modifiers": { "mandatory": ["option"] },
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    },
                                     "simultaneous": [
-                                        { "key_code": "w" },
-                                        { "key_code": "t" }
+                                        {
+                                            "key_code": "w"
+                                        },
+                                        {
+                                            "key_code": "t"
+                                        }
                                     ]
                                 },
-                                "to": [{ "shell_command": "open '/Applications/iTerm.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open '/Applications/iTerm.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -203,13 +302,25 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "modifiers": { "mandatory": ["option"] },
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    },
                                     "simultaneous": [
-                                        { "key_code": "w" },
-                                        { "key_code": "b" }
+                                        {
+                                            "key_code": "w"
+                                        },
+                                        {
+                                            "key_code": "b"
+                                        }
                                     ]
                                 },
-                                "to": [{ "shell_command": "open '/Applications/Google Chrome.app'" }],
+                                "to": [
+                                    {
+                                        "shell_command": "open '/Applications/Google Chrome.app'"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -218,28 +329,58 @@
             },
             "fn_function_keys": [
                 {
-                    "from": { "key_code": "f3" },
-                    "to": [{ "key_code": "mission_control" }]
+                    "from": {
+                        "key_code": "f3"
+                    },
+                    "to": [
+                        {
+                            "key_code": "mission_control"
+                        }
+                    ]
                 },
                 {
-                    "from": { "key_code": "f4" },
-                    "to": [{ "key_code": "launchpad" }]
+                    "from": {
+                        "key_code": "f4"
+                    },
+                    "to": [
+                        {
+                            "key_code": "launchpad"
+                        }
+                    ]
                 },
                 {
-                    "from": { "key_code": "f5" },
-                    "to": [{ "key_code": "illumination_decrement" }]
+                    "from": {
+                        "key_code": "f5"
+                    },
+                    "to": [
+                        {
+                            "key_code": "illumination_decrement"
+                        }
+                    ]
                 },
                 {
-                    "from": { "key_code": "f6" },
-                    "to": [{ "key_code": "illumination_increment" }]
+                    "from": {
+                        "key_code": "f6"
+                    },
+                    "to": [
+                        {
+                            "key_code": "illumination_increment"
+                        }
+                    ]
                 }
             ],
             "name": "Default profile",
             "selected": true,
             "simple_modifications": [
                 {
-                    "from": { "key_code": "caps_lock" },
-                    "to": [{ "key_code": "left_command" }]
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ]
                 }
             ],
             "virtual_hid_keyboard": {
