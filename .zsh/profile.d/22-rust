@@ -2,4 +2,5 @@
 # Settings for rust
 #####################
 
-. "$HOME/.cargo/env"
+rustup_env_file="$HOME/.cargo/env"
+[ -f "$rustup_env_file" ] && . $rustup_env_file
