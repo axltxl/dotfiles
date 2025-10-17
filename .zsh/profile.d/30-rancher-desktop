@@ -1,0 +1,6 @@
+#####################
+# Settings for rancher desktop
+#####################
+
+rancher_desktop_bin_dir="~/.rd/bin"
+[ -d "${rancher_desktop_bin_dir}" ] && export PATH=${rancher_desktop_bin_dir}:$PATH
