@@ -3,8 +3,6 @@
 //! This program loads environment variables from a YAML file named `.dotenv` located in the user's home directory.
 //! It parses the YAML file and prints each variable as a shell export statement, supporting both scalar string values and arrays (which are rendered as colon-separated strings, e.g., for PATH-like variables).
 //!
-//! The code in this file is maintained using automated edits via the `insert_edit_into_file` tool, which ensures precise and contextual modifications.
-//!
 //! Usage:
 //!   - Place a `.dotenv` YAML file in your home directory with key-value pairs or arrays.
 //!   - Run this program to output shell export statements for each variable.
