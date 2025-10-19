@@ -11,8 +11,8 @@ use dirs;
 use std::error::Error;
 use std::fs::File;
 use std::io::Read;
-use yaml_rust::yaml::Hash;
 use yaml_rust::YamlLoader;
+use yaml_rust::yaml::Hash;
 
 // Configuration file name in the user's home directory
 const CONF_FILE_NAME: &str = ".dotenv";
@@ -77,8 +77,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             if v.is_array() {
                 // decode array from YAML data
                 let v_ar = v
-                    .clone()
-                    .into_vec()
+                    .as_vec()
                     .ok_or(format!("couldn't decode array: {}", name))?;
 
                 // build colon-separated string from array values
