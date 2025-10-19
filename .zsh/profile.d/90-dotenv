@@ -1,16 +1,19 @@
 ############################################
 # Fill the environment with
-# custom variables via dot-env
+# custom variables via dotenv
+# see: .local/bin/dotenv
+# see: ~/.dotenv
 ############################################
 
-# These are used by dot-env
-export DOT_ENV_OUT=${HOME}/.dotenv.out
-export DOT_ENV_CFG=${HOME}/.dotenv
-
-if [[ ! -f "$DOT_ENV_OUT" ]]; then
-    # see: .local/bin/dot-env
-    dot-env > $DOT_ENV_OUT 2> /dev/null
+if ! `which dotenv` > /dev/null 2>&1; then
+    if `which cargo` > /dev/null 2>&1; then
+        # Install dotenv tool via cargo
+        # see: .local/bin/dotenv project
+        cargo install --path ~/.local/bin/dotenv
+    else
+        echo "dotenv: cannot be installed: cargo not found"
+    fi
 fi
 
-# source environment variables defined in the final output file
-. $DOT_ENV_OUT
+# export all variables from output of dotenv
+eval $(dotenv 2> /dev/null)
