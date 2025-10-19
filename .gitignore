@@ -18,11 +18,11 @@
 # .local
 !.local/
 !.local/bin
-!.local/bin/genv/
-!.local/bin/genv/*
-!.local/bin/genv/src/
-!.local/bin/genv/src/*
-!.local/bin/dot-env
+!.local/bin/dotenv/
+!.local/bin/dotenv/*
+!.local/bin/dotenv/src/
+!.local/bin/dotenv/src/*
+!.local/bin/dotenv.py
 
 # karabiner-elements
 !.config/karabiner/
