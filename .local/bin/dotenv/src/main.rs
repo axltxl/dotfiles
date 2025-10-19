@@ -11,8 +11,8 @@ use dirs;
 use std::error::Error;
 use std::fs::File;
 use std::io::Read;
-use yaml_rust::YamlLoader;
 use yaml_rust::yaml::Hash;
+use yaml_rust::YamlLoader;
 
 // Configuration file name in the user's home directory
 const CONF_FILE_NAME: &str = ".dotenv";
