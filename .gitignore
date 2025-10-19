@@ -16,6 +16,12 @@
 !.tmux/conf.d/**/*
 
 # .local
+!.local/
+!.local/bin
+!.local/bin/genv/
+!.local/bin/genv/*
+!.local/bin/genv/src/
+!.local/bin/genv/src/*
 !.local/bin/dot-env
 
 # karabiner-elements
