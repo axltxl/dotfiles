@@ -76,9 +76,9 @@ fn main() -> Result<(), Box<dyn Error>> {
             // (e.g., PATH-like variables)
             if v.is_array() {
                 // decode array from YAML data
-                let v_ar = v
-                    .as_vec()
-                    .ok_or(format!("couldn't decode array: {}", name))?;
+                let v_ar = v.as_vec().unwrap();
+                // note: optionally, consider this
+                // .ok_or(format!("couldn't decode array: {}", name))?;
 
                 // build colon-separated string from array values
                 let mut final_value = String::new();
