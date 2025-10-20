@@ -7,12 +7,12 @@
 //!   - Place a `.dotenv` YAML file in your home directory with key-value pairs or arrays.
 //!   - Run this program to output shell export statements for each variable.
 
-use dirs;
-use std::error::Error;
-use std::fs::File;
-use std::io::Read;
-use yaml_rust::YamlLoader;
-use yaml_rust::yaml::Hash;
+use dirs; // Provides functions to get common directories (like home, config, etc.)
+use std::error::Error; // Trait for error handling in Rust
+use std::fs::File; // For working with files (open, create, etc.)
+use std::io::Read; // Trait for reading from files and other sources
+use yaml_rust::yaml::Hash; // Hash type used for YAML mapping in yaml-rust
+use yaml_rust::YamlLoader; // Function to load and parse YAML documents
 
 // Configuration file name in the user's home directory
 const CONF_FILE_NAME: &str = ".dotenv";
@@ -59,6 +59,18 @@ fn get_env_vars() -> Result<Hash, Box<dyn Error>> {
     Ok(out_hash)
 }
 
+// Macro to print a shell-style export statement for a variable and its value.
+//
+// # Arguments
+//
+// * `$name` - The name of the variable (expression).
+// * `$value` - The value to assign to the variable (expression).
+//
+// # Example
+//
+// ```rust
+// print_value!("PATH", "/usr/bin");
+// ```
 macro_rules! print_value {
     ($name:expr, $value:expr) => {
         println!("export {}=\"{}\"", $name, $value);
