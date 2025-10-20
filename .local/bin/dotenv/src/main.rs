@@ -82,7 +82,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
                 // build colon-separated string from array values
                 let mut final_value = String::new();
-                for value in v_ar.iter() {
+                for value in v_ar {
                     // all values in the array must be strings
                     if let Some(value) = value.as_str() {
                         final_value.push_str(&format!("{}:", value));
