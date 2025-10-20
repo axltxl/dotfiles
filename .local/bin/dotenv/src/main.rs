@@ -11,8 +11,8 @@ use dirs; // Provides functions to get common directories (like home, config, et
 use std::error::Error; // Trait for error handling in Rust
 use std::fs::File; // For working with files (open, create, etc.)
 use std::io::Read; // Trait for reading from files and other sources
-use yaml_rust::yaml::Hash; // Hash type used for YAML mapping in yaml-rust
-use yaml_rust::YamlLoader; // Function to load and parse YAML documents
+use yaml_rust::YamlLoader;
+use yaml_rust::yaml::Hash; // Hash type used for YAML mapping in yaml-rust // Function to load and parse YAML documents
 
 // Configuration file name in the user's home directory
 const CONF_FILE_NAME: &str = ".dotenv";
