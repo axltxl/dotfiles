@@ -1,26 +1,27 @@
-## dotfiles
+# dotfiles
 
-<description pending>
+Personal configuration files for zsh, tmux, git, and development tools.
 
-## Install this repo
+## Installation
 
 ```bash
-cd /tmp
-git clone git@github.com:axltxl/dotfiles.git
-cd dotfiles; cp -r . ~
+git clone git@github.com:ricoveri/dotfiles.git /tmp/dotfiles
+cd /tmp/dotfiles && cp -r . ~
 ```
 
-## Install dependencies
+## Requirements
 
-### Essentials
-
-Get these sorted out first ...
-
-- [zsh](https://www.zsh.org/)
-- [oh-my-zsh](https://ohmyz.sh/#install)
-- [tmux](https://github.com/tmux/tmux)
-- [tmux plugin manager](https://github.com/tmux-plugins/tpm)
+- [zsh](https://www.zsh.org/) + [oh-my-zsh](https://ohmyz.sh/#install)
+- [tmux](https://github.com/tmux/tmux) (v3.3a+) + [tpm](https://github.com/tmux-plugins/tpm)
 - [fzf](https://github.com/junegunn/fzf)
+- [Rust/Cargo](https://rustup.rs/) (optional, for envy)
+
+## What's Included
+
+- **Zsh**: Custom plugins, theme configuration, and modular profile scripts
+- **Tmux**: Sensible defaults, key bindings, and plugin management
+- **Git**: Global configuration
+- **Tools**: Auto-setup for Neovim, Golang, Rust, Homebrew, and more via profile scripts
 
 ## Copyright and Licensing
 
