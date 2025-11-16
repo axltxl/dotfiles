@@ -14,7 +14,7 @@ cd /tmp/dotfiles && cp -r . ~
 - [zsh](https://www.zsh.org/) + [oh-my-zsh](https://ohmyz.sh/#install)
 - [tmux](https://github.com/tmux/tmux) (v3.3a+) + [tpm](https://github.com/tmux-plugins/tpm)
 - [fzf](https://github.com/junegunn/fzf)
-- [Rust/Cargo](https://rustup.rs/) (optional, for envy)
+- [Rust/Cargo](https://rustup.rs/) (optional, for [envy](github.com/ricoveri/envy)
 
 ## What's Included
 
